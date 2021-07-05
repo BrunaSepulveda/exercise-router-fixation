@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import Home from './Home';
+import {BrowserRouter} from 'react-router-dom';
+import Content from './Content';
+import Header from './Header';
 
 class App extends Component {
   render() {
     return (
-      <Home />
+      <BrowserRouter>
+        <Header />
+        <Content />
+      </BrowserRouter>
     );
   }
 }
